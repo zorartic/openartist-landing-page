@@ -652,31 +652,18 @@ export default function OpenArtistLanding() {
         <section style={{ padding: "6rem 2rem" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <Reveal>
-              <p
-                style={{
-                  fontSize: 11,
-                  letterSpacing: 4,
-                  textTransform: "uppercase",
-                  color: C.gold,
-                  marginBottom: "1rem",
-                  textAlign: "center",
-                }}
-              >
-                What you get
-              </p>
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: "clamp(28px, 4vw, 40px)",
+                  fontSize: "clamp(36px, 6vw, 64px)",
                   fontWeight: 400,
                   textAlign: "center",
                   marginBottom: "3rem",
                   fontStyle: "italic",
+                  color: C.ivory,
                 }}
               >
-                Built for the people defining
-                <br />
-                what AI content looks like.
+                What you get
               </h2>
             </Reveal>
 
@@ -701,7 +688,7 @@ export default function OpenArtistLanding() {
                 {
                   icon: "🎨",
                   title: "Full creative freedom",
-                  desc: "A light brief with direction. No scripts. No rigid formats. Your voice, your style, always.",
+                  desc: "No scripts. No rigid formats. Your voice, your style, always.",
                 },
                 {
                   icon: "📡",
@@ -859,6 +846,7 @@ export default function OpenArtistLanding() {
 
                   {[
                     "Paid per post",
+                    "Bonus pay when impressions break through",
                     "Monthly OpenArt credits included",
                     "2–3 posts per month",
                     "Early model access",
@@ -928,9 +916,11 @@ export default function OpenArtistLanding() {
 
                   {[
                     "Higher pay per post",
+                    "Bonus pay when impressions break through",
                     "Increased monthly OpenArt credits",
                     "2–3 posts per month",
                     "First access to every model drop",
+                    "OpenArt Pro account included",
                     "Direct Slack with the team",
                     "Quarterly product roadmap input",
                     "Featured on OpenArt channels",
@@ -1002,6 +992,15 @@ export default function OpenArtistLanding() {
             >
               {[
                 {
+                  icon: "📡",
+                  title: "Audience & Reach",
+                  bullets: [
+                    "5000+ followers on at least one major platform",
+                    "Highly engaged creative audience",
+                    "Consistent reach, not one-off spikes",
+                  ],
+                },
+                {
                   icon: "🎨",
                   title: "Active Creation",
                   bullets: [
@@ -1019,14 +1018,7 @@ export default function OpenArtistLanding() {
                     "Share your work publicly and tag OpenArt so we can amplify it",
                   ],
                 },
-                {
-                  icon: "📡",
-                  title: "Audience & Reach",
-                  bullets: [
-                    "Highly engaged creative audience on at least one major social platform",
-                    "Consistent reach, not one-off spikes",
-                  ],
-                },
+                
               ].map((card, ci) => (
                 <Reveal key={ci} delay={ci * 0.1 + 0.15}>
                   <div className="criteria-card">
@@ -1135,7 +1127,7 @@ export default function OpenArtistLanding() {
                 },
                 {
                   q: "What kind of content do I create?",
-                  a: "Whatever feels natural to you. Tutorials, demo threads, reaction posts, workflow breakdowns, visual showcases, commentary. We send a light brief with a model or feature to explore and a few directional hooks. Everything else is your format, your voice, your style. No scripts, no approval chains.",
+                  a: "Whatever feels natural to you. Tutorials, demo threads, reaction posts, workflow breakdowns, visual showcases, commentary. Your format, your voice, your style. No scripts, no approval chains.",
                 },
                 {
                   q: "How do I move from Select to Signature?",
